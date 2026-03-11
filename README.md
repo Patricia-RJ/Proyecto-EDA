@@ -13,7 +13,7 @@ El proyecto sigue una estructura profesional basada en buenas prácticas de orga
 
 ---
 
-## 🛠️ 2. Tecnologías Utilizadas
+## 2. Tecnologías Utilizadas
 
 - Python 3.11
 - Pandas
@@ -27,11 +27,11 @@ El proyecto sigue una estructura profesional basada en buenas prácticas de orga
 
 ---
 
-## 🧭 3. Metodología de Trabajo
+## 3. Metodología de Trabajo
 
 El proyecto se desarrolla siguiendo una metodología estructurada basada en ramas de Git para simular un entorno profesional.
 
-### 🌿 Estrategia de ramas
+### Estrategia de ramas
 
 ```
 main
@@ -42,7 +42,7 @@ main
       └── feature/report
 ```
 
-### 📌 Función de cada rama
+### Función de cada rama
 
 - **main**  
   Contiene la versión final estable lista para entrega o despliegue.
@@ -66,7 +66,7 @@ Esta estructura permite mantener el proyecto organizado, escalable y fácil de m
 
 ---
 
-## 📂 4. Estructura del Proyecto
+## 4. Estructura del Proyecto
 
 ```
 eda-proyecto/
@@ -84,10 +84,6 @@ eda-proyecto/
 │   ├── figures/                 # Gráficos exportados en PNG
 │   └── informe_final.docx
 │
-├── dashboard/                   # Proyecto Django
-│   ├── manage.py
-│   ├── eda_dashboard/
-│   └── app/
 │
 ├── requirements.txt
 └── README.md
@@ -95,7 +91,7 @@ eda-proyecto/
 
 ---
 
-## 🧹 5. Fase 1 — Limpieza y Transformación de Datos
+## 5. Fase 1 — Limpieza y Transformación de Datos
 
 Notebook: `01_data_cleaning.ipynb`
 
@@ -115,7 +111,7 @@ data/processed/
 
 ---
 
-## 📊 6. Fase 2 — Análisis Exploratorio
+## 6. Fase 2 — Análisis Exploratorio
 
 Notebook: `02_eda_analysis.ipynb`
 
@@ -130,7 +126,7 @@ Análisis realizados:
 
 ---
 
-## 📈 7. Fase 3 — Visualización de Datos
+## 7. Fase 3 — Visualización de Datos
 
 Notebook: `03_visualizations.ipynb`
 
@@ -151,59 +147,18 @@ Los gráficos se exportan en formato PNG en:
 ```
 reports/figures/
 ```
-
 ---
 
-## 🌐 8. Fase 4 — Dashboard Web con Django
+## 8. Configuración del Entorno
 
-Como extensión del proyecto, se implementa un dashboard web básico utilizando Django para mostrar:
-
-- Indicadores clave (KPIs)
-- Tablas resumen
-- Visualizaciones generadas en el EDA
-
-### 🔹 Creación del proyecto Django
-
-Desde la raíz del repositorio:
-
-```bash
-django-admin startproject eda_dashboard dashboard
-cd dashboard
-python manage.py startapp app
-```
-
-### 🔹 Ejecutar servidor local
-
-```bash
-cd dashboard
-python manage.py runserver
-```
-
-Acceso en navegador:
-
-```
-http://127.0.0.1:8000/
-```
-
-Las visualizaciones pueden integrarse:
-
-- Como imágenes exportadas desde el EDA
-- O mediante librerías frontend (Chart.js / Plotly)
-
-Esta fase demuestra capacidad de integración entre análisis de datos y desarrollo web.
-
----
-
-## ⚙️ 9. Configuración del Entorno
-
-### 🔹 Crear entorno virtual
+### Crear entorno virtual
 
 ```bash
 conda create -n hackio python=3.11
 conda activate hackio
 ```
 
-### 🔹 Instalar dependencias
+### Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
@@ -217,7 +172,7 @@ pip install pandas numpy matplotlib seaborn jupyter django
 
 ---
 
-## 🚀 10. Ejecución del Proyecto
+## 9. Ejecución del Proyecto
 
 1. Clonar repositorio:
 
@@ -238,16 +193,9 @@ conda activate hackio
 - 02_eda_analysis
 - 03_visualizations
 
-4. (Opcional) Ejecutar dashboard:
-
-```bash
-cd dashboard
-python manage.py runserver
-```
-
 ---
 
-## 📄 11. Informe Final
+## 10. Informe Final
 
 El proyecto incluye un informe técnico en Word que contiene:
 
@@ -266,7 +214,7 @@ reports/informe_final.docx
 ---
 
 
-## 👩‍💻 Autora
+## Autora
 
 Patricia Romo Jiménez  
 
